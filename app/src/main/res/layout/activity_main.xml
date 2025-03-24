@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmailAddress"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginTop="71dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="-26dp"
+        android:layout_toEndOf="@+id/btnLogin"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/btnShow"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="72dp"
+        android:layout_toEndOf="@+id/btnSignup"
+        android:text="Show" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_below="@+id/btnSignup"
+        android:layout_marginTop="106dp"
+        android:hint="Dữ liệu hiển thị ở đây"
+        android:textSize="16sp" />
+</RelativeLayout>
